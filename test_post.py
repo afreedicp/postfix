@@ -14,3 +14,8 @@ def testonly_operents():
 def testmore_operents():
     ret = postfixOperation.postfix_operator("123/*-+*-/-/-+")
     assert ret == "anable to operate"
+
+
+def test_normalcalc():
+    ret = postfixOperation.postfix_operator("123*+")
+    assert ret == [7]
