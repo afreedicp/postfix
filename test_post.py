@@ -9,3 +9,8 @@ def testnonoperator():
 def testonly_operents():
     ret = postfixOperation.postfix_operator("/*-+*-/-/-+")
     assert ret == "anable to operate"
+
+
+def testmore_operents():
+    ret = postfixOperation.postfix_operator("123/*-+*-/-/-+")
+    assert ret == "anable to operate"
