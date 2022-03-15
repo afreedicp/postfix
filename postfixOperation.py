@@ -7,7 +7,7 @@ def postfix_operator(string):
             operatorlist.append(i)
         if i.isdigit():
             charlist.append(i)
-        if(len(charlist) < len(operatorlist)):
+        if(len(charlist) <= len(operatorlist)):
             return "anable to operate"
     for i in string:
         if i.isdigit():
