@@ -17,5 +17,5 @@ def testmore_operents():
 
 
 def test_normalcalc():
-    ret = postfixOperation.postfix_operator("123*+")
-    assert ret == [7]
+    ret = postfixOperation.postfix_operator("12845*+-/")
+    assert ret == [26]
